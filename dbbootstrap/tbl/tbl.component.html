@@ -1,0 +1,15 @@
+<button
+  type="button"
+  class="btn btn-primary d-none"
+  [id]="options.id"
+  (click)="rerender()"
+>
+  Rerender
+</button>
+
+<table
+  datatable
+  [dtOptions]="dtOptions"
+  [dtTrigger]="dtTrigger"
+  class="table table-hover"
+></table>

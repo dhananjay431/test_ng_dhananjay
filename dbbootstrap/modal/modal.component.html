@@ -1,0 +1,37 @@
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  [id]="config.id"
+  tabindex="-1"
+  [attr.aria-labelledby]="config.id + '_exampleModalLabel'"
+  aria-hidden="true"
+>
+  <div [class]="config.class">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h1 class="modal-title fs-5" [id]="config.id + '_exampleModalLabel'">
+          <ng-content select="[head]"></ng-content>
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <ng-content select="[body]"></ng-content>
+      </div>
+      <div class="modal-footer">
+        <ng-content select="[footer]"> </ng-content>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+ 
+
+ -->
